@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="mainModule">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Md. Nazmus Salahin Rocky(rocky.bgta@gmail.com)">
+    <title>AngularJS and Firebase</title>
+
+    <link href="styles/bootstrap.min.css" rel="stylesheet" media="screen">
+    <link href="styles/bootstrap-theme.css" rel="stylesheet" media="screen">
+
+    <link href="styles/sb-admin-2.css" rel="stylesheet" media="screen">
+    <link href="styles/jquery.growl.css" rel="stylesheet" media="screen">
+    <link rel="stylesheet" href="styles/font-awesome.min.css">
+</head>
+
+<body>
+<div id="wrapper">
+    <nav class="navbar navbar-default">
+        <div class="container">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="/">AngularJS and Firebase</a>
+            </div>
+
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#"><i class="fa fa-home"></i> Home</a></li>
+                <li><a href="#about"><i class="fa fa-shield"></i> About</a></li>
+                <li><a href="#contact"><i class="fa fa-comment"></i> Contact</a></li>
+                <li><a href="#phaseOne"><i class="fa fa-magic"></i> Phase One</a></li>
+                <li><a href="#phaseTwo"><i class="fa fa-paperclip"></i> Phase Two</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div id="main">
+        <div ng-view></div>
+    </div>
+
+    <footer class="text-center">
+        <p>Place footer content here <a href="#">Salehin Race</a></p>
+    </footer>
+
+</div>
+
+
+<script src="scripts/vendor/jquery-2.2.3.min.js"></script>
+<script src="scripts/vendor/angular.min.js"></script>
+<script src="scripts/vendor/angular-route.js"></script>
+<script src="scripts/vendor/angular-resource.js"></script>
+<script src="scripts/vendor/bootstrap.min.js"></script>
+<script src="scripts/vendor/jquery.growl.js"></script>
+<script src="scripts/vendor/sb-admin-2.js"></script>
+
+<script src="scripts/app.js"></script>
+<script src="scripts/rest/phaseOneEndPoint.js"></script>
+<script src="scripts/rest/phaseTwoEndPoint.js"></script>
+
+</body>
+</html>
