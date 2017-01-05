@@ -19,10 +19,10 @@ app.config(['$routeProvider', '$controllerProvider', function($routeProvider, $c
     }
 
     $routeProvider
-        .when('/',{templateUrl:'./index.html'})
+        //.when('/',{templateUrl:'/app.html'})
         .when('/phaseOne',{templateUrl:'views/phaseOne.html', controller:'phaseOneController', resolve: { load: function () {loadController("phaseOneController");}}})
-        .when('/phaseTwo',{templateUrl:'views/phaseTwo.html', controller:'phaseTwoController', resolve: { load: function () {loadController("phaseTwoController");}}})
-        .otherwise({
+        .when('/phaseTwo',{templateUrl:'views/phaseTwo.html', controller:'phaseTwoController', resolve: { load: function () {loadController("phaseTwoController");}}});
+        /*.otherwise({
             redirectTo: '/'
-        });
+        });*/
 }]);
