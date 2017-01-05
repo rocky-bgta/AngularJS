@@ -19,7 +19,7 @@ app.config(['$routeProvider', '$controllerProvider', function($routeProvider, $c
     }
 
     $routeProvider
-        .when('/',{templateUrl:'/app.html'})
+        .when('/',{templateUrl:'./index.html'})
         .when('/phaseOne',{templateUrl:'views/phaseOne.html', controller:'phaseOneController', resolve: { load: function () {loadController("phaseOneController");}}})
         .when('/phaseTwo',{templateUrl:'views/phaseTwo.html', controller:'phaseTwoController', resolve: { load: function () {loadController("phaseTwoController");}}})
         .otherwise({
